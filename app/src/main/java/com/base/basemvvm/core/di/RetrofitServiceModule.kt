@@ -5,6 +5,7 @@ import com.base.basemvvm.BuildConfig
 import com.base.basemvvm.core.common.Constants
 import com.base.basemvvm.core.common.HeaderRetrofitEnum
 import com.base.basemvvm.core.utils.Utility
+import com.base.basemvvm.data.network.service.DemoService
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.google.gson.Gson
@@ -15,6 +16,9 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.Protocol
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 import java.util.Collections
 import java.util.concurrent.TimeUnit
 import javax.inject.Named
@@ -51,6 +55,15 @@ class RetrofitServiceModule {
     @Singleton
     @Named(Constants.Inject.API)
     fun provideDemoRetrofit(gson: Gson, context: Context): Retrofit {
-
+        return Retrofit.Builder()
+            .baseUrl(BuildConfig.BASE_URL)
+            .client(getHttpClient(context))
+            .addConverterFactory(ScalarsConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
     }
+
+    @Provides
+    @Singleton
+    fun provideAppService(@Named(Constants.Inject.API) retrofit: Retrofit): DemoService = retrofit.create(DemoService::class.java)
 }

@@ -12,6 +12,9 @@ dagger-hilt = "2.47"
 gson = "2.10.1"
 okHttp = "4.12.0"
 chucker = "4.0.0"
+retrofit = "2.9.0"
+coroutine = "1.7.1"
+timber = "5.0.1"
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -38,5 +41,11 @@ dagger-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", ver
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
 okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
-chucker-logging-debug = {group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker"}
-chucker-logging-release = {group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chucker"}
+chucker-logging-debug = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker" }
+chucker-logging-release = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chucker" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-converter-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutine" }
+coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutine" }
+timber-log = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }

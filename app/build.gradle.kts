@@ -118,4 +118,16 @@ dependencies {
     //chucker
     debugImplementation(libs.chucker.logging.debug)
     releaseImplementation(libs.chucker.logging.release)
+
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.retrofit.converter.scalars)
+
+    //coroutine
+    implementation(libs.coroutine.android)
+    implementation(libs.coroutine.core)
+
+    //timber log
+    implementation(libs.timber.log)
 }
