@@ -97,6 +97,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -131,4 +134,8 @@ dependencies {
 
     //timber log
     implementation(libs.timber.log)
+
+    //ssp, sdp
+    implementation(libs.ssp.android)
+    implementation(libs.sdp.android)
 }

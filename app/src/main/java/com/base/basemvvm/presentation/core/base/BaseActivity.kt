@@ -1,4 +1,4 @@
-package com.base.basemvvm.presentation.core
+package com.base.basemvvm.presentation.core.base
 
 import android.content.Intent
 import android.os.Bundle
@@ -23,7 +23,6 @@ abstract class BaseActivity: AppCompatActivity() {
     }
 
     var isBack = false
-    val pref get() = PreferenceHelper.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)

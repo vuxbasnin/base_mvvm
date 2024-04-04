@@ -18,4 +18,12 @@ object Constants {
         const val PREF_DARK_MODE_SYSTEM = "IS_DARK_MODE_SYSTEM"
         const val PREF_DARK_MODE_IS_DISMISS_PROMPT = "PREF_DARK_MODE_IS_DISMISS_PROMPT"
     }
+
+    object TabMain {
+        const val TAB_0 = 0
+        const val TAB_1 = 1
+        const val TAB_2 = 2
+        const val TAB_3 = 3
+        const val TAB_4 = 4
+    }
 }

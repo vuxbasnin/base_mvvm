@@ -1,4 +1,4 @@
-package com.base.basemvvm.presentation.core
+package com.base.basemvvm.presentation.core.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

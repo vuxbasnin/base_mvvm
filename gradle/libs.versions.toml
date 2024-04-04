@@ -16,6 +16,10 @@ chucker = "4.0.0"
 retrofit = "2.9.0"
 coroutine = "1.7.1"
 timber = "5.0.1"
+constraintlayout = "2.1.4"
+viewpager2 = "1.0.0"
+material = "1.11.0"
+spAndroid = "1.1.0"
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -51,3 +55,8 @@ retrofit-converter-scalars = { group = "com.squareup.retrofit2", name = "convert
 coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutine" }
 coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutine" }
 timber-log = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+ssp-android = {group = "com.intuit.ssp", name = "ssp-android", version.ref = "spAndroid"}
+sdp-android = {group = "com.intuit.sdp", name = "sdp-android", version.ref = "spAndroid"}
